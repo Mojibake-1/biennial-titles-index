@@ -2,7 +2,7 @@
 
 A research dataset of **7,208 artwork titles** exhibited across **28 international biennials and triennials** (**209 editions**), with a real source URL and a sourcing-confidence rating on every record.
 
-**Live page:** open [`index.html`](index.html) (a single self-contained file, works offline by double-click).
+**Live page:** [biennial.001027.xyz](https://biennial.001027.xyz) (or open [`index.html`](index.html) offline by double-click, a single self-contained file).
 
 ## What this is
 
