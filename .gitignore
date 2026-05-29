@@ -1,0 +1,23 @@
+# scraped HTML cache and intermediates — never publish
+cache/
+backup_pre_expansion_20260529/
+backup_pre_t1merge_20260530/
+backup_pre_t2merge_20260530/
+outputs/20260524_biennial_titles/
+# per-edition / CLEAN / VERIFIED staging files (provenance kept locally only)
+outputs/expansion_20260529/*.json
+outputs/expansion_20260529/*.txt
+# misc local scratch
+*.pyc
+__pycache__/
+node_modules/
+*.html
+!index.html
+*.tsv
+report.txt
+final_check.txt
+check.txt
+guide_text.txt
+artworks_list.txt
+yoak_seg.txt
+extract.sh
