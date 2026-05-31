@@ -35,6 +35,13 @@ HTML = r"""<!DOCTYPE html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+(function(){
+  if(location.protocol==="http:"&&location.hostname==="biennial.001027.xyz"){
+    location.replace("https://"+location.host+location.pathname+location.search+location.hash);
+  }
+}());
+</script>
 <title>Biennial Work-Titles Index — __NWORKS__ works across __NEX__ exhibitions</title>
 <meta name="description" content="A searchable research index of __NWORKS__ artwork titles exhibited across __NEX__ international biennials and triennials (__NED__ editions). Each record carries artist, work, edition, year, a source URL, and a sourcing-confidence rating.">
 <style>
