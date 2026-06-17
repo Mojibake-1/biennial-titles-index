@@ -15,6 +15,8 @@ browser language (Chinese browser → 中文).
 | `build_i18n.py` | Assembles `i18n_zh.json`. Title translations live as an ordered list `TR` zipped against `phase1.json`, so keys match the original strings byte-for-byte. |
 | `select_phase1.py` | Selects the phase's title set from `works.json` (lyrical-imagery scoring, deduped) → `phase1.json`, each with full context (artist / exhibition / edition theme / year / source caption). |
 | `build_site.py` | Reads `works.json` + `coverage.json` + `i18n_zh.json`, joins translations onto records (`tz` / `nz`), embeds the EN/中文 UI dictionary, and writes the single-file `index.html`. |
+| `make_wave.py` | Emits `wf_wave.js` — a self-contained Workflow script with the next N untranslated titles (+context) inlined — so the bulk can be translated by a parallel translate→review agent fleet. |
+| `merge_wave.py` | Merges a completed wave's result file into `i18n_zh.json` (validates each `o` against the real title set; flags `f:uncertain`). |
 
 `works.json` is **never mutated** by the translation pass — translations are a
 separate join layer.
@@ -36,9 +38,14 @@ separate join layer.
    The `assert len(TR) == len(phase1)` guards against drift.
 3. `python build_i18n.py && python build_site.py` → rebuilds `index.html`.
 
-Phase 1 (this build): the top ~160 lyrical titles, hand-translated for the
-quality bar. Remaining unique titles will be translated in subsequent waves
-(a parallel translate → adversarial 信达雅 review workflow, calibrated to this bar).
+**Status: full coverage.** Phase 1 = the top ~160 lyrical titles, hand-translated
+to set the quality bar. The remaining ~6,888 unique titles were then translated
+in 6 waves by a parallel **translate → adversarial 信达雅 review** Workflow
+(`wf_wave.js`), calibrated to that bar. Every record now carries a 译名. Titles
+whose source is ambiguous or a caption fragment are flagged `f:"uncertain"` in
+`i18n_zh.json` (~769) and are the natural first candidates for a human review pass.
+
+To re-translate a title, edit its entry in `i18n_zh.json` and run `build_site.py`.
 
 ## Deploy
 

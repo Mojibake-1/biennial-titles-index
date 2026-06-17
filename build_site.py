@@ -36,7 +36,7 @@ for r in works:
         "m": r.get("extraction_method",""),
         "x": trunc(r.get("raw_caption_or_context","")),
     }
-    tr = TITLES.get(t)
+    tr = TITLES.get(t) or TITLES.get(t.strip())
     if tr:
         rec["tz"] = tr.get("z","")
         if tr.get("n"):
