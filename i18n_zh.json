@@ -1,0 +1,565 @@
+{
+ "exhibitions": {
+  "Venice Biennale Arte": "威尼斯艺术双年展",
+  "documenta": "卡塞尔文献展",
+  "Whitney Biennial": "惠特尼双年展",
+  "Berlin Biennale": "柏林双年展",
+  "Bienal de Sao Paulo": "圣保罗双年展",
+  "Biennale of Sydney": "悉尼双年展",
+  "Carnegie International": "卡内基国际展",
+  "Gwangju Biennale": "光州双年展",
+  "Istanbul Biennial": "伊斯坦布尔双年展",
+  "Liverpool Biennial": "利物浦双年展",
+  "Sharjah Biennial": "沙迦双年展",
+  "Skulptur Projekte Münster": "明斯特雕塑项目展",
+  "Manifesta": "欧洲当代艺术双年展（Manifesta）",
+  "Lyon Biennale": "里昂双年展",
+  "Asia Pacific Triennial": "亚太当代艺术三年展",
+  "Kochi-Muziris Biennale": "科钦-穆吉里斯双年展",
+  "Shanghai Biennale": "上海双年展",
+  "Bienal de La Habana": "哈瓦那双年展",
+  "Dak'Art": "达喀尔双年展",
+  "Taipei Biennial": "台北双年展",
+  "Busan Biennale": "釜山双年展",
+  "Yokohama Triennale": "横滨三年展",
+  "Aichi Triennale": "爱知三年展",
+  "Singapore Biennale": "新加坡双年展",
+  "Bangkok Art Biennale": "曼谷艺术双年展",
+  "Thailand Biennale": "泰国双年展",
+  "Jakarta Biennale": "雅加达双年展",
+  "Athens Biennale": "雅典双年展"
+ },
+ "titles": {
+  "Quiet Time: DMZ Forbidden Garden": {
+   "z": "静默时光：非军事区禁苑",
+   "n": "DMZ 即朝韩非军事区。"
+  },
+  "Sea Chanty Project: Swelling Wind Waves": {
+   "z": "海上号子计划：风起浪涌"
+  },
+  "The Sun, The Moon, and The Stars": {
+   "z": "日、月、星辰"
+  },
+  "Air I Breathe: Radio": {
+   "z": "我呼吸的空气：电台"
+  },
+  "Flow, Flower: Bloom!": {
+   "z": "流吧，花儿：绽放！",
+   "n": "原题 Flow / Flower 谐音双关。"
+  },
+  "FOREST (for a thousand years...)": {
+   "z": "森林（为时千年……）"
+  },
+  "Future Geography: Hyades Star Cluster": {
+   "z": "未来地理：毕星团",
+   "n": "Hyades 即金牛座毕星团。"
+  },
+  "Green light – An artistic workshop": {
+   "z": "绿光——一场艺术工作坊",
+   "n": "“Green light”亦含“放行、许可”之意。"
+  },
+  "Green Series: Nature, Borders, Spaces": {
+   "z": "绿之系列：自然、边界、空间"
+  },
+  "Lightplay: black, white, gray": {
+   "z": "光戏：黑、白、灰",
+   "n": "莫霍利-纳吉的早期光影实验。"
+  },
+  "Mr. Sun (Slow Violence)": {
+   "z": "太阳先生（缓慢的暴力）"
+  },
+  "Oracles, Owls…Some Animals Never Sleep": {
+   "z": "神谕、鸮鸟……有些动物从不入眠"
+  },
+  "Root sequence. Mother tongue": {
+   "z": "根的序列。母语"
+  },
+  "Sea. Sky. City. Human": {
+   "z": "海。天。城。人"
+  },
+  "Dark Clouds of the Future": {
+   "z": "未来的乌云"
+  },
+  "Healing Land, Remembering Country": {
+   "z": "疗愈土地，铭记故土",
+   "n": "“Country”取澳洲原住民“故土、家园”之义。"
+  },
+  "Martyrs (Earth, Air, Fire, Water)": {
+   "z": "殉道者（地、气、火、水）"
+  },
+  "Moon Garden Punjabi Birds": {
+   "z": "月之花园，旁遮普飞鸟"
+  },
+  "The Sea is a Blue Memory": {
+   "z": "海是一段蓝色的记忆"
+  },
+  "Vertical Red White Light": {
+   "z": "垂直的红白之光"
+  },
+  "An island is all surrounded by water...": {
+   "z": "岛屿四面皆是水……"
+  },
+  "Garden Amidst the Flame; Lacuna for Compassion": {
+   "z": "烈焰中的花园；悲悯之阙",
+   "n": "Lacuna 意为空缺、阙如。"
+  },
+  "River of the king: Water pollution Project One": {
+   "z": "王的河流：水污染计划之一"
+  },
+  "Song of Life – in the forest": {
+   "z": "生命之歌——在森林里"
+  },
+  "Time: Dust": {
+   "z": "时间：尘"
+  },
+  "ACT I: Swearing In Whispers": {
+   "z": "第一幕：低语中的宣誓"
+  },
+  "Anti-material; Light on Möbius": {
+   "z": "反物质；莫比乌斯环上的光"
+  },
+  "Balayer – A Map of Sweeping": {
+   "z": "Balayer——一幅清扫之图",
+   "n": "Balayer 法语意为“清扫”。"
+  },
+  "Black Photo Album: Look At Me": {
+   "z": "黑色相册：看着我"
+  },
+  "Bringing the War Home: House Beautiful": {
+   "z": "把战争带回家：美丽家居",
+   "n": "“House Beautiful”为美国家居杂志名。"
+  },
+  "Cross Border Convictions: HK/Korea": {
+   "z": "跨境定罪：香港／韩国"
+  },
+  "Dark Silhouette: Borrowed Inlets - Dogon": {
+   "z": "暗色剪影：借来的湾口——多贡",
+   "n": "Dogon 为西非多贡族。"
+  },
+  "Dark Silhouette: Enduring Bond": {
+   "z": "暗色剪影：恒久的羁绊"
+  },
+  "Dubai: What's Left of Her Land?": {
+   "z": "迪拜：她的土地还剩下什么？"
+  },
+  "ECHO POSITION: Poster": {
+   "z": "回声方位：海报"
+  },
+  "Esmeralda: Songs for the Hearing Impaired": {
+   "z": "埃斯梅拉达：为听障者而作的歌"
+  },
+  "Figure Ground: Beyond the White Field": {
+   "z": "图与底：白色场域之外",
+   "n": "Figure-ground 即图底关系。"
+  },
+  "From Smoke and Tangled Waters We Carried Fire Home": {
+   "z": "从烟与乱水中，我们携火归家"
+  },
+  "Home, and a Home": {
+   "z": "家，与一个家"
+  },
+  "I have my mouth to speak...": {
+   "z": "我有口，可以言说……"
+  },
+  "Ifa Ile Oja – Black Ifa": {
+   "z": "Ifa Ile Oja——黑色伊法",
+   "n": "约鲁巴语；伊法（Ifá）为约鲁巴占卜体系。"
+  },
+  "Labour of Love – The Housewife": {
+   "z": "爱的劳作——家庭主妇"
+  },
+  "Liquid Shadows, Solid Dreams (A Monastic Playground)": {
+   "z": "流动的影，凝固的梦（修道的游乐场）"
+  },
+  "Love Story feat. Baldwin & Moore": {
+   "z": "爱情故事 feat. 鲍德温与摩尔",
+   "n": "鲍德温或指作家詹姆斯·鲍德温。"
+  },
+  "Mapping the Land Body Stories of its Past": {
+   "z": "绘制土地之躯，与它过往的故事"
+  },
+  "Maruts — Storm Deities": {
+   "z": "摩录多——风暴诸神",
+   "n": "Maruts 为印度神话中的风暴神。"
+  },
+  "Memory of My Life: Breaking Bottles": {
+   "z": "我生命的记忆：摔碎瓶子"
+  },
+  "Momentary Monument — The Stone": {
+   "z": "瞬间的纪念碑——石"
+  },
+  "Nature's Breath: Arokhayasala": {
+   "z": "自然的气息：无病之所",
+   "n": "Arokhayasala 泰语意为“疗愈、无病之所”。"
+  },
+  "Nunavut: Our Land": {
+   "z": "努纳武特：我们的土地",
+   "n": "Nunavut 为加拿大因纽特人自治地区。"
+  },
+  "Ocean and Sky (with Two Palm Trees)": {
+   "z": "海与天（带两棵棕榈树）"
+  },
+  "Olfactory Acoustic Composition for Wind and Dust and Breath": {
+   "z": "嗅·声交响：为风、尘与气息而作"
+  },
+  "Overspill: Universal Map": {
+   "z": "漫溢：寰宇之图"
+  },
+  "Paradise: The Bread of Angels": {
+   "z": "天堂：天使之粮"
+  },
+  "Passage (Project: Another Country)": {
+   "z": "通道（计划：另一个国度）"
+  },
+  "Polis: Meeting of Lonely Souls": {
+   "z": "城邦：孤独灵魂的相聚"
+  },
+  "Pop Song: March for the Beloved": {
+   "z": "流行歌曲：献给你的进行曲",
+   "n": "“March for the Beloved”即韩国民主运动名曲《献给你的进行曲》。"
+  },
+  "POTENTIALITY FOR LOVE – MAHDOLLINEN RAKKAUS": {
+   "z": "爱之可能——Mahdollinen Rakkaus",
+   "n": "芬兰语，意为“可能的爱”。"
+  },
+  "Prelude: Song of Departure": {
+   "z": "序曲：离歌"
+  },
+  "Record/Resist: Second Wave": {
+   "z": "记录／抵抗：第二波"
+  },
+  "Saara Omulaule: Black Saara": {
+   "z": "Saara Omulaule：黑萨拉",
+   "n": "奥万博语，意为“黑人萨拉”。"
+  },
+  "Salmon: A Red Herring": {
+   "z": "鲑鱼：一尾红鲱鱼",
+   "n": "“red herring”亦为“障眼法、误导视听”之意。"
+  },
+  "Shelter: for the time being": {
+   "z": "庇护：暂且栖身"
+  },
+  "Shifting Sands: A Battle Song": {
+   "z": "流沙：一首战歌"
+  },
+  "Spiral Incense Mantra – Heart Sutra": {
+   "z": "盘香咒语——《心经》"
+  },
+  "Spirit of Red Cloud and Sitting Bull": {
+   "z": "红云与坐牛之魂",
+   "n": "Red Cloud（红云）、Sitting Bull（坐牛）为北美原住民领袖。"
+  },
+  "St. Hubert and Bird's Nest": {
+   "z": "圣休伯特与鸟巢",
+   "n": "圣休伯特为猎人的主保圣人。"
+  },
+  "Sweet Earth: Experimental Utopias in America": {
+   "z": "甜美的土地：美国的乌托邦实验"
+  },
+  "The Garden – Ode to Courage": {
+   "z": "花园——勇气颂"
+  },
+  "The Raging Tide: Fight": {
+   "z": "怒潮：斗争",
+   "n": "李桦木刻《怒潮》组画之一。"
+  },
+  "To Breathe: Mandala": {
+   "z": "呼吸：曼陀罗"
+  },
+  "Un/asked – Voice blooms": {
+   "z": "未／问——声音绽放"
+  },
+  "Ungrounding Land – Ljavek Trilogy": {
+   "z": "无根之地——Ljavek 三部曲",
+   "n": "Ljavek 为高雄一带原住民旧地名。"
+  },
+  "Warm up: State Hermitage Museum Theater": {
+   "z": "热身：埃尔米塔什博物馆剧院",
+   "n": "即圣彼得堡冬宫（埃尔米塔什）。"
+  },
+  "Wearing Memory (Ver. Pusan)": {
+   "z": "穿戴记忆（釜山版）"
+  },
+  "White; Nova; Halo": {
+   "z": "白；新星；光晕"
+  },
+  "Wutharr: Saltwater Dreams": {
+   "z": "Wutharr：咸水之梦",
+   "n": "Wutharr 为澳洲原住民语词。"
+  },
+  "YUMA, or the land of friends": {
+   "z": "YUMA，又名友人之地",
+   "n": "Yuma 为马格达莱纳河的原住民名称。"
+  },
+  "A Song to a Tearful Garden": {
+   "z": "献给含泪花园的歌"
+  },
+  "A Thread and Thousand River": {
+   "z": "一线千川"
+  },
+  "Beer Garden with Ash": {
+   "z": "落灰的啤酒花园"
+  },
+  "Between a River and a Sea": {
+   "z": "在河与海之间"
+  },
+  "Between Heaven and Land": {
+   "z": "天地之间"
+  },
+  "Black and White": {
+   "z": "黑与白"
+  },
+  "Black Cloud Chamber": {
+   "z": "黑色云室",
+   "n": "cloud chamber 亦为物理学“云室”。"
+  },
+  "Black Water Station (Mbarara)": {
+   "z": "黑水站（姆巴拉拉）",
+   "n": "Mbarara 为乌干达城市。"
+  },
+  "Bodies of Water": {
+   "z": "众水之体",
+   "n": "bodies of water 意为“水体”。"
+  },
+  "Body of Water": {
+   "z": "一片水域"
+  },
+  "Body with Electric Skin, Horizontal Shelf": {
+   "z": "通电之肤的身体，水平的搁架"
+  },
+  "Brine Lake (A New Body)": {
+   "z": "盐湖（一具新身）"
+  },
+  "Cell (glass spheres and hands)": {
+   "z": "囚室（玻璃球与手）",
+   "n": "布尔乔亚“Cell”系列，兼具囚室、细胞之意。"
+  },
+  "Cosmic dust collection (Extraterrestrial Smithereens)": {
+   "z": "宇宙尘埃采集（地外碎屑）"
+  },
+  "Deep Soil Thrombosis": {
+   "z": "深土血栓"
+  },
+  "Disappearing spirits and childhood memories": {
+   "z": "消逝的精灵与童年记忆"
+  },
+  "Dream Maps, Polaris": {
+   "z": "梦境地图，北极星",
+   "n": "Polaris 即北极星。"
+  },
+  "Dream Time Chart": {
+   "z": "梦创时序图",
+   "n": "Dreamtime 为澳洲原住民“梦创”宇宙观。"
+  },
+  "Exomind (Deep Water)": {
+   "z": "域外心智（深水）"
+  },
+  "Eye of the Storm": {
+   "z": "风暴之眼"
+  },
+  "Fish, Fire, Fallout": {
+   "z": "鱼、火、辐射尘",
+   "n": "Fallout 兼指放射性尘埃与余波。"
+  },
+  "Flowers That Bloom at Midnight": {
+   "z": "午夜绽放的花"
+  },
+  "Fractals for Light (White on white)": {
+   "z": "光之分形（白上加白）"
+  },
+  "Fruit of the Dark Womb": {
+   "z": "幽暗子宫的果实"
+  },
+  "Garden Amidst the Flame": {
+   "z": "烈焰中的花园"
+  },
+  "Garden of Desire": {
+   "z": "欲望之园"
+  },
+  "Garden of Silence": {
+   "z": "寂静之园"
+  },
+  "Garnkiny Ngarrangkarni (Moon Dreaming)": {
+   "z": "Garnkiny Ngarrangkarni（月之梦创）",
+   "n": "吉佳语，意为“月亮梦创”。"
+  },
+  "Ghosts From Bamboo Forest": {
+   "z": "竹林幽魂"
+  },
+  "Gold Star TV": {
+   "z": "金星牌电视机",
+   "n": "Gold Star（金星）为韩国电器品牌，LG 前身。"
+  },
+  "Green Grey Black Brown": {
+   "z": "绿、灰、黑、褐"
+  },
+  "Green light - An artistic workshop": {
+   "z": "绿光——一场艺术工作坊",
+   "n": "“Green light”亦含“放行、许可”之意。"
+  },
+  "Green Screen Goddess (Ten Thousand Waves)": {
+   "z": "绿幕女神（万重浪）",
+   "n": "出自伊萨克·朱利安影像作品《万重浪》。"
+  },
+  "Heart of Darkness": {
+   "z": "黑暗之心",
+   "n": "呼应康拉德小说《黑暗之心》。"
+  },
+  "Heaven, the Sky": {
+   "z": "天国，天空"
+  },
+  "Her contour (hand and eyes)": {
+   "z": "她的轮廓（手与眼）"
+  },
+  "Home Home Sweet Home": {
+   "z": "家，家，甜蜜的家"
+  },
+  "Home Sweet Home": {
+   "z": "甜蜜的家"
+  },
+  "I Will Keep A Light Burning": {
+   "z": "我愿守一盏灯长明"
+  },
+  "Japanese Houses, Stone Garden of Imperialism": {
+   "z": "日本家屋，帝国主义的石庭",
+   "n": "stone garden 指日式枯山水。"
+  },
+  "Leaves of Grass": {
+   "z": "草叶集",
+   "n": "呼应惠特曼诗集《草叶集》。"
+  },
+  "Listening All Night to the Rain": {
+   "z": "彻夜听雨"
+  },
+  "Memories in Light": {
+   "z": "光中的记忆"
+  },
+  "Memory of Skin": {
+   "z": "肌肤的记忆"
+  },
+  "Mercy Garden Retour Skin": {
+   "z": "慈悲花园 归返 肌肤",
+   "n": "Retour 法语意为“归返”。"
+  },
+  "Mother Tongue, Woven Skin": {
+   "z": "母语，织就的肌肤"
+  },
+  "Mountains of Gold and Silver": {
+   "z": "金山银山"
+  },
+  "Moving Earth, Crossing Water, Eating Soil": {
+   "z": "动土，渡水，食壤"
+  },
+  "My forest is not your garden": {
+   "z": "我的森林不是你的花园"
+  },
+  "My Future is Not a Dream": {
+   "z": "我的未来不是梦",
+   "n": "呼应张雨生歌曲《我的未来不是梦》。"
+  },
+  "Mystical Black Bird (Ave preta mistica)": {
+   "z": "神秘的黑鸟（Ave preta mística）",
+   "n": "葡萄牙语副题。"
+  },
+  "Night Vision (Red as never been)": {
+   "z": "夜视（红得前所未有）"
+  },
+  "Ocean of Flowers": {
+   "z": "繁花之海"
+  },
+  "Quiet Room with Tears": {
+   "z": "含泪的静室"
+  },
+  "Red over morning sea": {
+   "z": "晨海之上，一片红"
+  },
+  "Root of The Sun": {
+   "z": "太阳之根"
+  },
+  "Sea Plants, Bare Hands, Entangled Gaetbawi": {
+   "z": "海藻、赤手、缠结的海礁",
+   "n": "Gaetbawi（갯바위）韩语意为海边礁岩。"
+  },
+  "Silence of Stones": {
+   "z": "石之缄默"
+  },
+  "Sinking in the Past": {
+   "z": "沉入过往"
+  },
+  "Sleeping Deep Beauty": {
+   "z": "沉睡深处之美",
+   "n": "戏拟“睡美人”(Sleeping Beauty)。"
+  },
+  "Song of the Sea Witch": {
+   "z": "海巫之歌"
+  },
+  "Songs to Earth, Songs to Seeds": {
+   "z": "唱给大地，唱给种子"
+  },
+  "Spear Form, Soft White": {
+   "z": "矛形，柔白"
+  },
+  "Stars that Fell into the Sea": {
+   "z": "坠入海中的群星"
+  },
+  "Sweet Dreams Sweet": {
+   "z": "甜梦，甜"
+  },
+  "Take a Deep Breath": {
+   "z": "深呼吸"
+  },
+  "Thais (Bird of Paradise)": {
+   "z": "泰伊思（天堂鸟）"
+  },
+  "The Bones In Her Skin": {
+   "z": "她肌肤里的骨"
+  },
+  "The Garden of Memory Blossoms": {
+   "z": "记忆繁花之园"
+  },
+  "The Harvest Melting On Our Tongue": {
+   "z": "在舌尖消融的收成"
+  },
+  "The Labour Song I Night": {
+   "z": "劳动之歌 I 夜",
+   "n": "原题分隔符意义存疑。"
+  },
+  "The Mineral Kingdom (Dark Green)": {
+   "z": "矿物王国（深绿）"
+  },
+  "The Past is a Foreign Country": {
+   "z": "往昔是异邦",
+   "n": "典出哈特利名句“The past is a foreign country”。"
+  },
+  "The Quiet Weight of Shadows": {
+   "z": "群影沉静的重量"
+  },
+  "The Silence of Ani, Turkish/Armenian Border": {
+   "z": "阿尼的沉默，土耳其／亚美尼亚边境",
+   "n": "Ani 为土亚边境的中世纪古城遗址。"
+  },
+  "Ultra Black Sun": {
+   "z": "至黑之日"
+  },
+  "Water has never feared the fire": {
+   "z": "水从不惧火"
+  },
+  "Water is a Time Machine": {
+   "z": "水是一台时间机器"
+  },
+  "Whispers Beneath the Ashes": {
+   "z": "灰烬之下的低语"
+  },
+  "... when the cry takes root ...": {
+   "z": "……当啼哭生根……"
+  },
+  "A Divine Image : Pink Light (Blake)": {
+   "z": "神圣的形象：粉光（布莱克）",
+   "n": "源自布莱克诗作 “A Divine Image”。"
+  },
+  "And the Dragon Ate St. George's Horse": {
+   "z": "而恶龙吞了圣乔治的马",
+   "n": "圣乔治屠龙传说。"
+  }
+ }
+}
