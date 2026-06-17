@@ -473,8 +473,14 @@ function applyLang(){
 }
 
 // events
-var qel=document.getElementById('q'),t=null;
-qel.addEventListener('input',function(){clearTimeout(t);t=setTimeout(function(){state.q=qel.value;state.page=0;render();},90);});
+var qel=document.getElementById('q'),t=null,composing=false;
+function scheduleSearch(){clearTimeout(t);t=setTimeout(function(){state.q=qel.value;state.page=0;render();},90);}
+// IME-aware: while composing (e.g. Chinese pinyin) skip the intermediate input
+// events and run the search when composition commits, so CJK terms search the
+// committed text, not the romanization.
+qel.addEventListener('compositionstart',function(){composing=true;});
+qel.addEventListener('compositionend',function(){composing=false;scheduleSearch();});
+qel.addEventListener('input',function(){if(composing)return;scheduleSearch();});
 document.getElementById('clear').onclick=function(){qel.value='';state.q='';state.page=0;render();qel.focus();};
 document.getElementById('sort').onchange=function(e){state.sort=e.target.value;state.page=0;render();};
 document.getElementById('reset').onclick=resetAll;
