@@ -308,7 +308,10 @@ function yearNum(s){ var m=String(s||'').match(/\d{4}/); return m?parseInt(m[0],
 var exCount={};
 RAW.forEach(function(r,i){
   r.i=i;
-  r._s=(r.t+' '+(r.tz||'')+' '+r.a+' '+r.e+' '+(EXZH[r.e]||'')+' '+r.d+' '+(r.x||'')).toLowerCase();
+  // free-text search blob. NB: Chinese exhibition names are intentionally NOT
+  // included — every one ends in 双年展/三年展, so single chars like 展/年/双
+  // would match almost everything. Filter by exhibition via the sidebar instead.
+  r._s=(r.t+' '+(r.tz||'')+' '+r.a+' '+r.e+' '+r.d+' '+(r.x||'')).toLowerCase();
   r._y=yearNum(r.y)||yearNum(r.d);
   exCount[r.e]=(exCount[r.e]||0)+1;
 });
