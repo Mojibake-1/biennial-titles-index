@@ -279,13 +279,13 @@ body.lang-en .only-en{display:block}
       <h4 data-i18n="about_h">About this index</h4>
       <div class="only-zh"><p>本页索引了 <b>__NEX__</b> 个国际双年展 / 三年展、<b>__NED__</b> 个历届展中可考的 <b>__NWORKS__</b> 件参展作品标题，并为其中精选的作品标题附上"信达雅"中文译名（目前已译 <b>__NTR__</b> 条，持续扩充中）。每条记录都附真实来源链接与"采集置信度"评级；找不到来源的届次宁可不收，也不编造。历史届次为代表性收录，非全量清单。</p></div>
       <div class="only-en"><p>A research dataset of artwork titles exhibited at international biennials and triennials, each row carrying artist, work, edition, year, a real source URL, an extraction method, and a sourcing-confidence rating. Selected titles also carry a Chinese (信达雅) translation beneath the original (__NTR__ done so far, expanding). Generated __GENERATED__.</p></div>
-      <p class="credit only-zh">中文译名由 Claude 进行翻译。</p>
-      <p class="credit only-en">Chinese translations by Claude.</p>
       <details class="about">
         <summary data-i18n="for_machines">For machines / 给程序与大模型</summary>
         <div class="only-zh"><p>完整数据集以 JSON 形式内嵌于本页 <code>&lt;script type="application/json" id="works-data"&gt;</code>。每条记录使用短键：<code>e</code> 展览、<code>d</code> 届次、<code>a</code> 艺术家、<code>t</code> 标题、<code>tz</code> 中文译名、<code>y</code> 创作年份、<code>c</code> 置信度（high|medium|low）、<code>u</code> 来源链接、<code>m</code> 提取方式、<code>x</code> 来源图注／语境。可直接解析，无需联网。</p></div>
         <div class="only-en"><p>The complete dataset is embedded in this page as JSON at <code>&lt;script type="application/json" id="works-data"&gt;</code>. Each record uses short keys: <code>e</code> exhibition, <code>d</code> edition, <code>a</code> artist, <code>t</code> title, <code>tz</code> Chinese title, <code>y</code> work_year, <code>c</code> confidence (high|medium|low), <code>u</code> source_url, <code>m</code> extraction_method, <code>x</code> source caption/context. Parse it directly; no network request is needed.</p></div>
       </details>
+      <p class="credit only-zh">中文译名由 Claude 进行翻译。</p>
+      <p class="credit only-en">Chinese translations by Claude.</p>
     </div>
     <div>
       <h4 data-i18n="rubric_h">Confidence rubric</h4>
