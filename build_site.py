@@ -313,7 +313,7 @@ var CONF_ORDER = {high:0,medium:1,low:2};
 var I18N = {
  en:{
   brand:'Biennial Work-Titles Index',
-  sub:'<b>{w}</b> works · <b>{e}</b> exhibitions · <b>{d}</b> editions',
+  sub:'<b>{w}</b> works · <b>{e}</b> exhibitions · <b>{d}</b> editions · Chinese translations by Claude',
   search:'Search title, artist, exhibition, edition…',
   about:'About', data:'Data ↓',
   confidence:'Confidence', sort:'Sort', exhibitions:'Exhibitions',
@@ -329,7 +329,7 @@ var I18N = {
  },
  zh:{
   brand:'双年展作品标题索引',
-  sub:'<b>{w}</b> 件作品 · <b>{e}</b> 个展览 · <b>{d}</b> 个届次',
+  sub:'<b>{w}</b> 件作品 · <b>{e}</b> 个展览 · <b>{d}</b> 个届次 · 中文译名由 Claude 进行翻译',
   search:'搜索标题、译名、艺术家、展览…',
   about:'关于', data:'数据 ↓',
   confidence:'采集置信度', sort:'排序', exhibitions:'展览',
