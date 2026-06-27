@@ -194,6 +194,7 @@ footer{border-top:1px solid var(--line-2);margin-top:40px}
 .foot{max-width:1280px;margin:0 auto;padding:30px 22px 60px;display:grid;grid-template-columns:1.4fr 1fr;gap:34px}
 .foot h4{font-family:var(--mono);font-size:0.68rem;text-transform:uppercase;letter-spacing:.13em;color:var(--ink-3);margin:0 0 10px;font-weight:600}
 .foot p{font-size:0.84rem;color:var(--ink-2);margin:0 0 8px;max-width:68ch}
+.foot p.credit{font-family:var(--mono);font-size:0.72rem;color:var(--ink-3);margin-top:10px}
 .legend{display:flex;flex-direction:column;gap:7px;font-size:0.84rem;color:var(--ink-2)}
 .legend .g{font-weight:700;margin-right:7px}
 .legend .g.high{color:var(--hi)} .legend .g.medium{color:var(--me)} .legend .g.low{color:var(--lo)}
@@ -278,6 +279,8 @@ body.lang-en .only-en{display:block}
       <h4 data-i18n="about_h">About this index</h4>
       <div class="only-zh"><p>本页索引了 <b>__NEX__</b> 个国际双年展 / 三年展、<b>__NED__</b> 个历届展中可考的 <b>__NWORKS__</b> 件参展作品标题，并为其中精选的作品标题附上"信达雅"中文译名（目前已译 <b>__NTR__</b> 条，持续扩充中）。每条记录都附真实来源链接与"采集置信度"评级；找不到来源的届次宁可不收，也不编造。历史届次为代表性收录，非全量清单。</p></div>
       <div class="only-en"><p>A research dataset of artwork titles exhibited at international biennials and triennials, each row carrying artist, work, edition, year, a real source URL, an extraction method, and a sourcing-confidence rating. Selected titles also carry a Chinese (信达雅) translation beneath the original (__NTR__ done so far, expanding). Generated __GENERATED__.</p></div>
+      <p class="credit only-zh">中文译名由 Claude 进行翻译。</p>
+      <p class="credit only-en">Chinese translations by Claude.</p>
       <details class="about">
         <summary data-i18n="for_machines">For machines / 给程序与大模型</summary>
         <div class="only-zh"><p>完整数据集以 JSON 形式内嵌于本页 <code>&lt;script type="application/json" id="works-data"&gt;</code>。每条记录使用短键：<code>e</code> 展览、<code>d</code> 届次、<code>a</code> 艺术家、<code>t</code> 标题、<code>tz</code> 中文译名、<code>y</code> 创作年份、<code>c</code> 置信度（high|medium|low）、<code>u</code> 来源链接、<code>m</code> 提取方式、<code>x</code> 来源图注／语境。可直接解析，无需联网。</p></div>
@@ -313,7 +316,7 @@ var CONF_ORDER = {high:0,medium:1,low:2};
 var I18N = {
  en:{
   brand:'Biennial Work-Titles Index',
-  sub:'<b>{w}</b> works · <b>{e}</b> exhibitions · <b>{d}</b> editions · Chinese translations by Claude',
+  sub:'<b>{w}</b> works · <b>{e}</b> exhibitions · <b>{d}</b> editions',
   search:'Search title, artist, exhibition, edition…',
   about:'About', data:'Data ↓',
   confidence:'Confidence', sort:'Sort', exhibitions:'Exhibitions',
@@ -329,7 +332,7 @@ var I18N = {
  },
  zh:{
   brand:'双年展作品标题索引',
-  sub:'<b>{w}</b> 件作品 · <b>{e}</b> 个展览 · <b>{d}</b> 个届次 · 中文译名由 Claude 进行翻译',
+  sub:'<b>{w}</b> 件作品 · <b>{e}</b> 个展览 · <b>{d}</b> 个届次',
   search:'搜索标题、译名、艺术家、展览…',
   about:'关于', data:'数据 ↓',
   confidence:'采集置信度', sort:'排序', exhibitions:'展览',
