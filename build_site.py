@@ -63,6 +63,42 @@ HTML = r"""<!DOCTYPE html>
   }
 }());
 </script>
+<script>
+(function(){
+  var allowedThemes=["","nature","stellar"];
+  var aliases={light:"",dark:"stellar"};
+  function normalizeTheme(theme){
+    var normalized=String(theme||"").trim().toLowerCase();
+    if(Object.prototype.hasOwnProperty.call(aliases,normalized)) normalized=aliases[normalized];
+    return allowedThemes.indexOf(normalized)===-1?"":normalized;
+  }
+  function applyTheme(theme,persist){
+    var normalized=normalizeTheme(theme);
+    if(normalized) document.documentElement.setAttribute("data-theme",normalized);
+    else document.documentElement.removeAttribute("data-theme");
+    if(persist){
+      try{localStorage.setItem("muxing-theme",normalized);}catch(e){}
+    }
+  }
+  var params=new URLSearchParams(location.search);
+  var initial=params.get("muxing-theme");
+  if(initial==null){
+    try{initial=localStorage.getItem("muxing-theme");}catch(e){}
+  }
+  applyTheme(initial,false);
+  window.addEventListener("message",function(event){
+    if(window.parent&&window.parent!==window&&event.source!==window.parent)return;
+    var data=event.data;
+    if(!data||data.source!=="muxing-workbench"||data.type!=="muxing:set-theme")return;
+    applyTheme(data.theme,true);
+  });
+  try{
+    if(window.parent&&window.parent!==window){
+      window.parent.postMessage({source:"muxing-tool",type:"muxing:request-theme",tool:params.get("muxing-tool")||"biennial"},"*");
+    }
+  }catch(e){}
+}());
+</script>
 <title>双年展作品标题索引 · Biennial Work-Titles Index</title>
 <meta name="description" content="A searchable bilingual (EN/中文) research index of __NWORKS__ artwork titles exhibited across __NEX__ international biennials and triennials (__NED__ editions). 一份可检索的双年展参展作品标题研究索引，附中文译名、来源链接与采集置信度。">
 <style>
@@ -88,6 +124,49 @@ HTML = r"""<!DOCTYPE html>
   --mono:ui-monospace,"SF Mono","Cascadia Mono","Segoe UI Mono",Menlo,Consolas,monospace;
   --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,"Helvetica Neue",Arial,"PingFang SC","Microsoft YaHei",sans-serif;
   --serif:"Songti SC","STSong","Noto Serif CJK SC","Source Han Serif SC",Georgia,"Times New Roman",serif;
+  color-scheme:light;
+}
+html[data-theme="nature"]{
+  --paper:oklch(0.968 0.016 126);
+  --paper-2:oklch(0.94 0.018 126);
+  --panel:oklch(0.925 0.020 123);
+  --ink:oklch(0.25 0.026 130);
+  --ink-2:oklch(0.43 0.025 130);
+  --ink-3:oklch(0.58 0.022 130);
+  --line:oklch(0.84 0.018 126);
+  --line-2:oklch(0.76 0.022 126);
+  --accent:oklch(0.50 0.105 170);
+  --accent-soft:oklch(0.50 0.105 170 / 0.12);
+  --accent-ring:oklch(0.50 0.105 170 / 0.28);
+  --zh:oklch(0.38 0.055 105);
+  --hi:oklch(0.48 0.09 165);
+  --me:oklch(0.58 0.095 85);
+  --lo:oklch(0.53 0.03 92);
+  --hi-bg:oklch(0.48 0.09 165 / 0.12);
+  --me-bg:oklch(0.58 0.095 85 / 0.15);
+  --lo-bg:oklch(0.53 0.03 92 / 0.12);
+  color-scheme:light;
+}
+html[data-theme="stellar"]{
+  --paper:oklch(0.17 0.026 278);
+  --paper-2:oklch(0.22 0.028 278);
+  --panel:oklch(0.25 0.030 278);
+  --ink:oklch(0.88 0.030 78);
+  --ink-2:oklch(0.72 0.026 78);
+  --ink-3:oklch(0.58 0.028 278);
+  --line:oklch(0.35 0.030 278);
+  --line-2:oklch(0.42 0.035 278);
+  --accent:oklch(0.74 0.105 78);
+  --accent-soft:oklch(0.74 0.105 78 / 0.12);
+  --accent-ring:oklch(0.74 0.105 78 / 0.26);
+  --zh:oklch(0.78 0.070 65);
+  --hi:oklch(0.72 0.095 172);
+  --me:oklch(0.76 0.105 82);
+  --lo:oklch(0.70 0.032 76);
+  --hi-bg:oklch(0.72 0.095 172 / 0.14);
+  --me-bg:oklch(0.76 0.105 82 / 0.16);
+  --lo-bg:oklch(0.70 0.032 76 / 0.13);
+  color-scheme:dark;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
